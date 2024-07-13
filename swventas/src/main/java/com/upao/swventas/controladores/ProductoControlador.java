@@ -10,7 +10,6 @@ import java.util.List;
 
 public interface ProductoControlador {
 
-    //Voy a devolver un json
     @RequestMapping(value = "/listar", produces = {"application/json"}, method = RequestMethod.GET)
     List<Producto> listarProductos();
 
